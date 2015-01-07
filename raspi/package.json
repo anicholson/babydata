@@ -1,0 +1,14 @@
+{
+  "name": "baby_data_raspi",
+  "version": "1.0.0",
+  "description": "Accept sensory data over USB and send to Keen.IO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "raspi"
+  ],
+  "author": "Andy Nicholson",
+  "license": "MIT"
+}

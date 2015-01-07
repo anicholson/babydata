@@ -1,0 +1,20 @@
+{
+  "name": "baby_data",
+  "version": "1.0.0",
+  "description": "Why not start monitoring your kid at birth?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tessel",
+    "node",
+    "keen"
+  ],
+  "author": "Andy Nicholson",
+  "license": "MIT",
+  "dependencies": {
+    "ambient-attx4": "^0.2.4",
+    "keen.io": "^0.1.3"
+  }
+}
