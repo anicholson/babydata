@@ -10,5 +10,8 @@
     "raspi"
   ],
   "author": "Andy Nicholson",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "keen.io": "^0.1.3"
+  }
 }
