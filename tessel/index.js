@@ -34,14 +34,18 @@
         countedValues = 0;
 
     setInterval(function() {
-        if (countedValues == 60) { process.exit(0); }
 
         ambient.getLightLevel( function(err, light_reading) {
             if(err) throw err;
 
+            var values = {
+                mean: mean(lightValues),
+                stddev: stddev(lightValues)
+            };
+
             lightValues = rollingAdd(lightValues, light_reading);
-            console.log("Average light:", mean(lightValues));
-            console.log("Std Dev:", stddev(lightValues));
+
+            process.send(values);
         });
 
         countedValues += 1;
